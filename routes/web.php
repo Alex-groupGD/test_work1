@@ -32,7 +32,6 @@ Route::get('/', function () {
 
 
 Route::resource('users',UserController::class);
-/*Route::resource('avtos',AvtoController::class);*/
 Route::put('/update/sdsds/', 'UserController@update')->name('up');
 
 
@@ -41,14 +40,6 @@ Route::post('/store/{user}', 'AvtoController@store')->name('avtos.store');
 Route::delete('/avtos/delete/{id}', 'AvtoController@destroy')->name('avtos.destroy');
 Route::get('/edit/{avto}', 'AvtoController@edit')->name('ss');
 Route::put('/update/update/{avto}', 'AvtoController@update')->name('avtos.update');
-
-/*Route::post('/posts', 'AvtoController@store');*/
-/*Route::resource('avtos',AvtoController::class);*/
-/*
-Route::get('post', 'AvtoController@create')->name('avtos.create');
-//Route::post( '/avtos/create_avto','AvtoController@store')->name('avtos.store');
-Route::post( 'post', 'AvtoController@store')->name('avtos.store');*/
-
 
 
 
