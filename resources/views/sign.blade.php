@@ -133,14 +133,4 @@
 
     </form>
 
-    {{--  <form>
-          <div class="col-md-4 mb-3">
-              <div class="form-group">
-                  <label for="formGroupExampleInput2">Адресс</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Введите Адресс">
-              </div>
-
-          </div>
-      </form>--}}
-
 @endsection
