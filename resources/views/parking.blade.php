@@ -21,8 +21,13 @@
                     <label>Владелец</label>
                     <select class="form-control input-sm" name="category_id">
                         <option value="">--select--</option>
+<<<<<<< HEAD
                         @foreach ($users as $row=>$value)
                             <option value="{{$value->id}}">{{$value->family}}</option>
+=======
+                        @foreach ($users as $row)
+                            <option value="{{$row->id}}">{{$row->family}}</option>
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
                         @endforeach
                     </select>
                 </div>
@@ -90,11 +95,19 @@
 
     </form>
     <h1>Парковка</h1>
+<<<<<<< HEAD
     <h1>  @foreach($avto as $avt=>$value)
         <ul class="list-group m-3 ">
         <li class="list-group-item">
               {{$value->marka}} {{$value->model}} {{$value->color}} {{$value->gos_num}}
                <a href="{{route('avto_out' , $value->id)}}" class="btn  btn-secondary fw-bold border-white bg-dark">Покинуть парковку</a>
+=======
+    <h1>  @foreach($avto as $avt)
+        <ul class="list-group m-3 ">
+        <li class="list-group-item">
+              {{$avt->marka}} {{$avt->model}} {{$avt->color}} {{$avt->gos_num}}
+               <a href="{{route('avto_out' , compact('avt'))}}" class="btn  btn-secondary fw-bold border-white bg-dark">Покинуть на парковку</a>
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
 
         </li>
     </ul>

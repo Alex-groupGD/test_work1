@@ -50,6 +50,7 @@ class avto extends Model
     {
         return $this->belongsTo(User::class );
     }
+<<<<<<< HEAD
 
 
 
@@ -62,3 +63,6 @@ class avto extends Model
 
 
 
+=======
+}
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8

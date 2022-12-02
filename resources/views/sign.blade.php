@@ -40,34 +40,47 @@
                 <input type="text" name="family"
                        value="{{old('family',isset($user) ? $user->family : null)}}"
                        class="form-control " id="formGroupExampleInput" placeholder="Введите фамилию">
+<<<<<<< HEAD
                         @error('family')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
 
+=======
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Имя</label>
                 <input type="text" name="name"
                        value="{{old('name',isset($user) ? $user->name : null)}}"
                        class="form-control" id="formGroupExampleInput2" placeholder="Введите Имя">
+<<<<<<< HEAD
                         @error('name')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
+=======
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Отчество</label>
                 <input type="text" name="name_father"
                        value="{{old('name_father',isset($user) ? $user->name_father : null)}}"
                        class="form-control" id="formGroupExampleInput2" placeholder="Введите Отчество">
+<<<<<<< HEAD
                         @error('name_father')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
+=======
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Телефон</label>
                 <input type="text" name="telephone"
                        value="{{isset($user) ? $user->telephone : null}}"
+<<<<<<< HEAD
                        class="form-control" id="formGroupExampleInput2" placeholder="Введите Телефон 79999999999">
+=======
+                       class="form-control" id="formGroupExampleInput2" placeholder="Введите Телефон">
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
                 @error('telephone')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
@@ -75,6 +88,7 @@
             <div class="form-group">
                 <label for="formGroupExampleInput2">Ваш пол:</label>
                 <div class="custom-control custom-radio">
+<<<<<<< HEAD
                     <input type="radio" id="customRadio" name="gender"
                            value="{{isset($user) ? $user->gender : 1}}"
                            class="custom-control-input">
@@ -85,6 +99,18 @@
                            value="{{isset($user) ? $user->gender : 0}}"
                            class="custom-control-input">
                     <label class="custom-control-label" for="customRadio">Женский</label>
+=======
+                    <input type="radio" id="customRadio1" name="gender"
+                           value="{{isset($user) ? $user->gender : null}}"
+                           class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">Мужской</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="gender"
+                           value="{{isset($user) ? $user->gender : null}}"
+                           class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Женский</label>
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
                 </div>
             </div>
             <div class="form-group">
@@ -143,6 +169,7 @@
 
     </form>
 
+<<<<<<< HEAD
     {{--  <form>
           <div class="col-md-4 mb-3">
               <div class="form-group">
@@ -153,4 +180,6 @@
           </div>
       </form>--}}
 
+=======
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
 @endsection

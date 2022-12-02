@@ -6,7 +6,10 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
+=======
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
 use Laravel\Sanctum\HasApiTokens;
 
 
@@ -53,6 +56,7 @@ class User extends Authenticatable
         return $this->hasMany(avto::class, 'user_id','id');
     }
 
+<<<<<<< HEAD
     public function get_users()
     {
         return DB::table('users')->get();
@@ -117,4 +121,6 @@ class User extends Authenticatable
         $avto = DB::table('avtos')->where('id','=',$avt->id)->update(['status' => 0]);
         return $avto;
     }
+=======
+>>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
 }
