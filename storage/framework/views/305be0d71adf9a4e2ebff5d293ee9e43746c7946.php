@@ -1,8 +1,7 @@
-
-
-
 <?php $__env->startSection('title-block'); ?>
     Машины <?php echo e($user->family); ?>
+
+    <?php echo e(isset($message) ? $message : Null); ?>
 
 <?php $__env->stopSection(); ?>
 

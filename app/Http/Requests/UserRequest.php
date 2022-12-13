@@ -27,7 +27,6 @@ class UserRequest extends FormRequest
             'family'=> 'required|alpha',
             'name'=> 'required|alpha',
             'name_father'=> 'required|alpha',
-<<<<<<< HEAD
             'telephone'=> 'required|unique:users,telephone|regex:/(7)[0-9]{10}/|size:11',
             'gender' =>'',
             'marka'=> 'required',
@@ -36,15 +35,6 @@ class UserRequest extends FormRequest
             'gos_num'=> 'required|unique:avtos,gos_num|size:8|alpha_num|regex:/[А-Я]{1}[0-9]{3}[А-Я]{2}[0-9]{2}/u',
             'adress'=> 'required',
 
-=======
-            'telephone'=> 'required|unique:users,telephone|size:11',
-            /*'gender'=> '',*/
-            'adress'=> '',
-            'marka'=> 'required',
-            'model'=> 'required',
-            'color'=> 'required',
-            'gos_num'=> 'required|unique:avtos,gos_num|size:6|alpha_num'
->>>>>>> 01df6951b265b392c8c6c60d6087920a5f3999b8
         ];
     }
 }
